@@ -30,16 +30,53 @@ a:hover,a:focus{
     width: 100%;
 }
 .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
-    color: black;
+    color: #494c50;
+    background-color: transparent;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #494c50;
+    background-color: transparent;
 }
 
 .navbar-inverse .navbar-nav>.active>a{
-    background: #E4E5E2;
+    background: transparent;
     color: #494c50;
 }
+
+@media screen and (max-width: 480px) {
+    .navbar-brand>img {
+        margin: 0;
+        width: 100px;
+    }
+    .navbar {
+        position: absolute;
+        min-height: 50px;
+        padding: 0px 0 0 0;
+    }
+    .navbar-nav {
+        margin: 0px;
+    }
+    .navbar-collapse{
+        padding: 0
+    }
+    .navbar-inverse .navbar-nav>.active>a{
+        background: transparent;
+        color: white;
+    }
+    .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+        color: white;
+        background-color: transparent;
+    }
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+        border-color: #101010;
+        background-color: black;
+        z-index: 9999;
+    }
+}
+
 .parallax {
     /* The image used */
-    background-image: url("https://static.pexels.com/photos/20974/pexels-photo.jpg");
+    background-image: url("https://i.pinimg.com/originals/09/3b/1d/093b1dc7c3eed0f7807891caca2fbe3c.jpg");
 
     /* Set a specific height */
     min-height: 200vh; 
@@ -49,6 +86,53 @@ a:hover,a:focus{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.parallax2 {
+    /* The image used */
+    background-image: url("http://cdn.wonderfulengineering.com/wp-content/uploads/2016/02/Rose-Wallpaper-10.jpg");
+
+    /* Set a specific height */
+    min-height: 200vh; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax3 {
+    /* The image used */
+    background-image: url("https://shareonline.in/wp-content/uploads/2016/05/flower-images-rose-hd-download-rose-flower-images-hd-wallpaper-mSaQel.jpg");
+
+    /* Set a specific height */
+    min-height: 200vh; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax4 {
+    /* The image used */
+    background-image: url("http://images6.fanpop.com/image/photos/34000000/Roses-flowers-34015120-1280-776.jpg");
+
+    /* Set a specific height */
+    min-height: 200vh; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.paralaxText{
+    position: relative;
+    top: 65vh;
+    color: white;
+    font-family: Raleway;
+    font-weight: 300;
+    letter-spacing: 10px;
 }
 .flowertext{
     font-family: Raleway;
@@ -87,4 +171,130 @@ h2.title {
     color: black !important;
     padding: 10px 0px 10px 15px;
     letter-spacing: 5px;
+}
+.footer{
+    padding: 10px;
+    background-color: #FDFDFD;
+    border-top: solid 1px #ccc;
+}
+.footer h6{
+    margin: 20px 0 10px 0;
+    color: #494c50;
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-family: Raleway;
+    font-weight: lighter;
+    font-style: normal;
+    text-transform: lowercase;
+    
+    display: block;
+    
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+.social{
+    padding: 16px;
+    border: solid 1px;
+    margin: 20px 20px 20px 0;
+}
+.footer p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #494c50;
+}
+
+p {
+    margin: 0 0 15px;
+    font-style: normal;
+    line-height: 1.8em;
+}
+.payment_methods {
+    margin: 4px 0 6px 0;
+    filter: alpha(opacity=80);
+    opacity: 0.9;
+}
+.payment_methods img {
+    padding-right: 4px;
+    height: 30px;
+    width: 48px;
+}
+
+input[type="email"]
+{
+    display: block;
+    width: 100%;
+    height: 40px;
+    min-height: 40px;
+    padding: 0 9px;
+    margin: 0;
+    line-height: 22px;
+    border: 1px solid #dfdfdf;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    outline: none;
+    background: #fff;
+    color: #5f6a7d;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font: 13px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+input[type="submit"]{
+    background: #c5c1bb;
+    display: inline-block;
+    color: #ffffff;
+    border: 0;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-block;
+    -webkit-transition: all 200ms ease 0s;
+    -moz-transition: all 200ms ease 0s;
+    -ms-transition: all 200ms ease 0s;
+    -o-transition: all 200ms ease 0s;
+    transition: all 200ms ease 0s;
+    -webkit-appearance: none;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.footer_menu {
+    list-style: none;
+    margin: 16px 0 0 0;
+    padding: 0;
+}
+.footer_menu li {
+    display: inline-block;
+    padding-right: 20px;
+}
+li {
+    margin-bottom: 12px;
+}
+
+ul.footer_menu a, ul.footer_menu a:visited {
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    font-weight: 300;
+    color: #494c50;
+}
+.btn-success{
+    padding: 10px 50px 10px 50px;
+    border-radius: 0px;
 }
