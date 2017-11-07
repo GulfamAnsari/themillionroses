@@ -8,293 +8,235 @@ a:hover,a:focus{
     text-decoration: none
 
 }
+.navbar{
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+    height: 65px;
+}
+.navbar .navbar-brand p{
+    color: white;
+    font-size: 26px;
+    font-family: fantasy;
+    margin-top: 9px;
+}
+.navbar-inverse .navbar-collapse{
+    border-color: #101010;
+    margin: 5px 0 0 0;
+}
+.background{
+    background-color: #DA4343;
+    width: 100%;
+    padding: 10px 0 20px 0;
+    
+    
+}
+.background-container{
+    margin: 40px 0 0 0;
+}
+.headingPavithram{
+    color: white;
+    font-size: 50px;
+    font-family: cursive;
+    margin-top: 3px;
+}
 
-.navbar {
-    position: absolute;
-    min-height: 64px;
-    padding: 7px 0 0 0;
+.pavithamPara{
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+    margin: 55px 0px 0 0;
 }
-.navbar-brand>img {
-    width: 250px;
-    margin: -20px 0 0 0;
-}
-.navbar-inverse{
-    background: #E4E5E2;
-    border: 1px solid #E4E5E2;
-    color: #494c50;
-    font-size: 16px;
-    text-align: center;
-    line-height: 40px;
-    height: 40px;
-    opacity: 0.95;
+.bookNow{
+    color: #fff;
+    background-color: black;
+    border-color: black;
+    padding: 10px;
+    border-radius: 0;
     width: 100%;
 }
-.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
-    color: #494c50;
-    background-color: transparent;
+.lowerPage{
+    background-color: #2C3B5A;
+    width: 100%;
+    padding: 15px;
+
 }
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
-    color: #494c50;
-    background-color: transparent;
+.icon{
+    color: red;
+    background-color: #F8F409;
+    padding: 15px;
+    font-size: 30px;
+    border-radius: 56%;
+    margin:  0 10px 0 10px;
 }
 
-.navbar-inverse .navbar-nav>.active>a{
-    background: transparent;
-    color: #494c50;
-}
+	/*Search Box*/
 
-@media screen and (max-width: 480px) {
-    .navbar-brand>img {
+ .searchBox
+    {
         margin: 0;
-        width: 100px;
+        padding: 0;
     }
-    .navbar {
+    input {
+        border-radius: 0 !important;
+        padding: 20px !important;
+        width:100% !important;
+    }
+    
+.searchBox svg
+    {
+    position:absolute;
+    right:102px;
+    top:-10px;
+    z-index:2;
+    }
+/* .searchBox form
+    {
+    position:absolute;
+    top:5px;
+    right:100px;
+    border-top:solid #f09548;
+    padding:20px;
+    background-color:#212120;
+    z-index:1;
+    } */
+    
+    #queryResult {
         position: absolute;
-        min-height: 50px;
-        padding: 0px 0 0 0;
-    }
-    .navbar-nav {
-        margin: 0px;
-    }
-    .navbar-collapse{
-        padding: 0
-    }
-    .navbar-inverse .navbar-nav>.active>a{
-        background: transparent;
+        box-sizing: border-box;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        background-color: #F6F7F7;
+        
+      }
+    
+      #queryResult ul {
+        list-style-type: none;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        max-height: 60vh;
+        overflow: auto;
+      }
+    
+      #queryResult ul li {
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      #queryResult ul li:hover{
+          background-color: #f09548;
+          
+      }
+      
+    
+      #queryResult ul li a {
+        box-sizing: border-box;
+        text-decoration: none;
+        color: black;
+      }
+      #queryResult ul li:hover > #queryResult ul li a { 
         color: white;
+        }
+      #queryResult .searchTitle{
+        box-sizing: border-box;
+        display:inline-block;
+        width: 75%;
+        
+      }
+      #queryResult .searchImage{
+        box-sizing: border-box;
+        display:inline-block;
+        width: 25%;
+      }
+      #queryResult .searchImage img{
+        box-sizing: border-box;
+        width: 100%;
+        margin-top: -18px;
+      }
+    
+    @media screen and (max-width:780px ) 
+    {
+        nav  .searchBox form
+        {
+            width:100%;
+            right:0px;
+        }
+         nav .searchBox svg
+         {
+             right:15px;
+         }
+        
     }
-    .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
-        color: white;
-        background-color: transparent;
+    
+    nav  .searchBox form input[type="text"]
+    {
+    border:solid 1px #f09548;
+    border-radius:0px;
+    background-color:#212120;
+    color:white;
+    min-width: 300px;
     }
-    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-        border-color: #101010;
-        background-color: black;
-        z-index: 9999;
+     nav .searchBox form input[type="submit"]
+    {
+        border:solid 1px #f09548;
+        border-radius:0px;
+        background-color:#f09548;
+        color:white;
     }
-}
 
-.parallax {
-    /* The image used */
-    background-image: url("https://i.pinimg.com/originals/09/3b/1d/093b1dc7c3eed0f7807891caca2fbe3c.jpg");
-
-    /* Set a specific height */
-    min-height: 200vh; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.parallax2 {
-    /* The image used */
-    background-image: url("http://cdn.wonderfulengineering.com/wp-content/uploads/2016/02/Rose-Wallpaper-10.jpg");
-
-    /* Set a specific height */
-    min-height: 200vh; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.parallax3 {
-    /* The image used */
-    background-image: url("https://shareonline.in/wp-content/uploads/2016/05/flower-images-rose-hd-download-rose-flower-images-hd-wallpaper-mSaQel.jpg");
-
-    /* Set a specific height */
-    min-height: 200vh; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.parallax4 {
-    /* The image used */
-    background-image: url("http://images6.fanpop.com/image/photos/34000000/Roses-flowers-34015120-1280-776.jpg");
-
-    /* Set a specific height */
-    min-height: 200vh; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.paralaxText{
-    position: relative;
-    top: 65vh;
+.iterany{
     color: white;
-    font-family: Raleway;
+    border: solid 2px white;
+    padding: 7px 20px;
+    font-size: 18px;
+    background-color: red;
+    margin: 0 -6px 0 0;
+
+}
+.btn-danger{
+    border-radius: 0;
+    padding: 7px 20px;
+}
+.spanPara{
+    color: white;
+    padding: 0 19px;
+    font-size: 17px;
+    font-family: inherit;
+}
+.arriveText{
+    color: white;
+    font-size: 20px;
+    font-family: inherit;
     font-weight: 300;
-    letter-spacing: 10px;
+    margin: 19px 0;
+    line-height: 32px;
+    word-spacing: 1px;
 }
-.flowertext{
-    font-family: Raleway;
-    font-weight: lighter;
-    font-style: normal;
-    text-transform: lowercase;
-    color: #494c50;
-    display: block;
-    letter-spacing: 6px;
-    text-rendering: optimizeLegibility;
-    font-size: 22px;
-    margin-bottom: 0.75em;
-    line-height: 1.5em;
-    text-align: center;
+.review{
+    border: solid white 2px;
+    color: white;
+    font-size: 25px;
+    display: inline-block;
+    padding: 5px 200px;
+    margin: 100px 0 0 0;
 }
-.feature_divider {
-    border: solid 3px;
-    border-bottom: 0;
-    display: block;
-    width: 30px;
-    margin: 25px auto;
-    border-color: #494c50;
+footer{
+    background-color: #FF5733;
 }
-h2.title {
-    font-size: 24px;
-    line-height: 1.25em;
-    margin: 0 auto 15px;
-    clear: both;
-    font-weight: 300;
-    padding-top: 22px;
-    text-align: center;
-}
-.title{
-    font-size: 24px;
-    font-weight: 300;
-    color: black !important;
-    padding: 10px 0px 10px 15px;
-    letter-spacing: 5px;
-}
-.footer{
-    padding: 10px;
-    background-color: #FDFDFD;
-    border-top: solid 1px #ccc;
-}
-.footer h6{
-    margin: 20px 0 10px 0;
-    color: #494c50;
-    font-size: 16px;
-    letter-spacing: 3px;
-    font-family: Raleway;
-    font-weight: lighter;
-    font-style: normal;
-    text-transform: lowercase;
-    
-    display: block;
-    
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
+.contact{
+    color: white;
+    padding: 20px 0 15px 25px;
 }
 .social{
-    padding: 16px;
-    border: solid 1px;
-    margin: 20px 20px 20px 0;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 20px 10px;
 }
-.footer p {
-    margin-bottom: 10px;
-    font-size: 14px;
-    color: #494c50;
-}
-
-p {
-    margin: 0 0 15px;
-    font-style: normal;
-    line-height: 1.8em;
-}
-.payment_methods {
-    margin: 4px 0 6px 0;
-    filter: alpha(opacity=80);
-    opacity: 0.9;
-}
-.payment_methods img {
-    padding-right: 4px;
-    height: 30px;
-    width: 48px;
-}
-
-input[type="email"]
-{
-    display: block;
-    width: 100%;
-    height: 40px;
-    min-height: 40px;
-    padding: 0 9px;
-    margin: 0;
-    line-height: 22px;
-    border: 1px solid #dfdfdf;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    outline: none;
-    background: #fff;
-    color: #5f6a7d;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    font: 13px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin-bottom: 15px;
-    display: inline-block;
-}
-
-input[type="submit"]{
-    background: #c5c1bb;
-    display: inline-block;
-    color: #ffffff;
-    border: 0;
-    padding: 10px 20px;
-    text-align: center;
-    cursor: pointer;
-    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    text-transform: uppercase;
-    display: inline-block;
-    -webkit-transition: all 200ms ease 0s;
-    -moz-transition: all 200ms ease 0s;
-    -ms-transition: all 200ms ease 0s;
-    -o-transition: all 200ms ease 0s;
-    transition: all 200ms ease 0s;
-    -webkit-appearance: none;
-    -webkit-border-radius: 2px;
-    -khtml-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;
-    border-radius: 2px;
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.footer_menu {
-    list-style: none;
-    margin: 16px 0 0 0;
-    padding: 0;
-}
-.footer_menu li {
-    display: inline-block;
-    padding-right: 20px;
-}
-li {
-    margin-bottom: 12px;
-}
-
-ul.footer_menu a, ul.footer_menu a:visited {
-    font-size: 16px;
-    letter-spacing: 3px;
-    margin-bottom: 5px;
-    font-weight: 300;
-    color: #494c50;
-}
-.btn-success{
-    padding: 10px 50px 10px 50px;
-    border-radius: 0px;
+.copyright{
+    font-size: 12px;
+    color: white;
+    padding: 0 0 18px 0;
 }
