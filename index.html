@@ -261,9 +261,40 @@ function showHint(str) {
         }
       }
     };
-    xhttp.open("GET", "https://maps.googleapis.com/maps/api/place/autocomplete/json?input="+str+"&types=geocode&key=AIzaSyCoxmA7mhaDZMn6VEHCIVasLOnxSeVG9io", true);
+    xhttp.open("GET", "https://maps.googleapis.com/maps/api/place/autocomplete/json?input="+str+"&types=geocode&key=AIzaSyCoxmA7mhaDZMn6VEHCIVasLOnxSeVG9io",true);
     xhttp.send();
+
+    
+// $.ajax({
+//             url: "https://maps.googleapis.com/maps/api/place/autocomplete/json?input="+str+"&types=geocode&key=AIzaSyCoxmA7mhaDZMn6VEHCIVasLOnxSeVG9io",
+            
+//             useDefaultXhrHeader: false,
+//             crossDomain: '*',
+//             type: 'GET',
+//             headers: {"X-My-Custom-Header": "some value"},
+//             async: false,
+//             dataType: 'json',
+//             cache: false,
+//             contentType: "application/json; charset=utf-8",
+//             success: function(response){                          
+//                 alert(response);                   
+//             } ,
+//             complete: function (data) {
+//                 if (data.readyState == '4' && data.status == '200') {
+//                     // data.then((data)=>{
+//                     //     console.log(data)
+//                     // })
+//                     console.log(data)
+//                 }
+//             }
+//         });
+
+
   }
+
+
+
+
 
 
 
